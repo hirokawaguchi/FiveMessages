@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		242B1E1233D2C6E1672278F8 /* Pods_FiveMessages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9D9D3A31B25BD066F3F6385 /* Pods_FiveMessages.framework */; };
 		EFA7BCA91C9A16350042A417 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA7BCA81C9A16350042A417 /* AppDelegate.swift */; };
 		EFA7BCAB1C9A16350042A417 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA7BCAA1C9A16350042A417 /* ViewController.swift */; };
 		EFA7BCAE1C9A16350042A417 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFA7BCAC1C9A16350042A417 /* Main.storyboard */; };
@@ -34,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3FC9AB9D9710B28C3DF9EA1C /* Pods-FiveMessages.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FiveMessages.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FiveMessages/Pods-FiveMessages.debug.xcconfig"; sourceTree = "<group>"; };
+		B56288B274BCE3BA45619E37 /* Pods-FiveMessages.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FiveMessages.release.xcconfig"; path = "Pods/Target Support Files/Pods-FiveMessages/Pods-FiveMessages.release.xcconfig"; sourceTree = "<group>"; };
 		EFA7BCA51C9A16350042A417 /* FiveMessages.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FiveMessages.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFA7BCA81C9A16350042A417 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EFA7BCAA1C9A16350042A417 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +50,7 @@
 		EFA7BCC41C9A16350042A417 /* FiveMessagesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FiveMessagesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFA7BCC81C9A16350042A417 /* FiveMessagesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiveMessagesUITests.swift; sourceTree = "<group>"; };
 		EFA7BCCA1C9A16350042A417 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9D9D3A31B25BD066F3F6385 /* Pods_FiveMessages.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FiveMessages.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				242B1E1233D2C6E1672278F8 /* Pods_FiveMessages.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +79,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2E4C5AEDE6BEE775F29D0DBD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3FC9AB9D9710B28C3DF9EA1C /* Pods-FiveMessages.debug.xcconfig */,
+				B56288B274BCE3BA45619E37 /* Pods-FiveMessages.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		EFA7BC9C1C9A16350042A417 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +95,8 @@
 				EFA7BCBC1C9A16350042A417 /* FiveMessagesTests */,
 				EFA7BCC71C9A16350042A417 /* FiveMessagesUITests */,
 				EFA7BCA61C9A16350042A417 /* Products */,
+				2E4C5AEDE6BEE775F29D0DBD /* Pods */,
+				FEF6130C05CFBF21CF396F23 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +141,14 @@
 			path = FiveMessagesUITests;
 			sourceTree = "<group>";
 		};
+		FEF6130C05CFBF21CF396F23 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F9D9D3A31B25BD066F3F6385 /* Pods_FiveMessages.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +156,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EFA7BCCD1C9A16350042A417 /* Build configuration list for PBXNativeTarget "FiveMessages" */;
 			buildPhases = (
+				615772D1C2074DE0BC1ED9B9 /* Check Pods Manifest.lock */,
 				EFA7BCA11C9A16350042A417 /* Sources */,
 				EFA7BCA21C9A16350042A417 /* Frameworks */,
 				EFA7BCA31C9A16350042A417 /* Resources */,
+				EB2F5FA346F0F6C4BA5A9A67 /* Embed Pods Frameworks */,
+				F700E2C80FEFFC63D125C4FA /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -250,6 +277,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		615772D1C2074DE0BC1ED9B9 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EB2F5FA346F0F6C4BA5A9A67 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FiveMessages/Pods-FiveMessages-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F700E2C80FEFFC63D125C4FA /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FiveMessages/Pods-FiveMessages-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EFA7BCA11C9A16350042A417 /* Sources */ = {
@@ -395,6 +470,7 @@
 		};
 		EFA7BCCE1C9A16350042A417 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3FC9AB9D9710B28C3DF9EA1C /* Pods-FiveMessages.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FiveMessages/Info.plist;
@@ -406,6 +482,7 @@
 		};
 		EFA7BCCF1C9A16350042A417 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B56288B274BCE3BA45619E37 /* Pods-FiveMessages.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FiveMessages/Info.plist;
@@ -482,6 +559,7 @@
 				EFA7BCCF1C9A16350042A417 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EFA7BCD01C9A16350042A417 /* Build configuration list for PBXNativeTarget "FiveMessagesTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +568,7 @@
 				EFA7BCD21C9A16350042A417 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EFA7BCD31C9A16350042A417 /* Build configuration list for PBXNativeTarget "FiveMessagesUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +577,7 @@
 				EFA7BCD51C9A16350042A417 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
